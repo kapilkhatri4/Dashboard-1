@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
+    <title>Dashboard</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+
+</head>
+<body>
+    <div class="container-fluid fixed-top">
+        <div class="row">
+            <nav class="navbar bg-dark">
+                <a href="#" class="menu-toggler">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <div class="nav-info">
+                    <a href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="sidemenu bg-dark text-center">
+        <ul class="menu-list">
+            <li><a href="" class="menu-item">Dashboard</a></li>
+            <li><a href="" class="menu-item">Weiget</a></li>
+            <li><a href="" class="menu-item">UI Elements</a></li>
+            <li><a href="" class="menu-item">Advance UI</a></li>
+            <li><a href="" class="menu-item">Form Elements</a></li>
+            <li><a href="" class="menu-item">Editors</a></li>
+            <li><a href="" class="menu-item">Charts</a></li>
+            <li><a href="" class="menu-item">Tables</a></li>
+            <li><a href="" class="menu-item">Popup</a></li>
+            <li><a href="" class="menu-item">Notifications</a></li>
+            <li><a href="" class="menu-item">Icons</a></li>
+            <li><a href="" class="menu-item">Maps</a></li>
+            <li><a href="" class="menu-item">Email</a></li>
+            <li><a href="" class="menu-item">calender</a></li>
+            <li><a href="" class="menu-item">Gallery</a></li>
+            <li><a href="" class="menu-item">Todo List</a></li>
+        </ul>
+    </div>
+
+    <div class="dashboard py-3 mt-5">
+        <div class="container-fluid">
+            <div class="row"> 
+                <div class=" col-md-8">
+                    <div class="summary">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="sum-nav py-3 col-md-4">
+                                        <div class="mb-3">
+                                            <p class="m-0">Dashboard</p>
+                                            <span>Overview Lastest Month</span>
+                                        </div>
+                                        <div class="sum-details ">
+                                            <h3 class="mb-1">$4000.00</h3>
+                                            <span class="mb-3">Current Month</span>
+                                            <h3 class="mb-1">82</h3>
+                                            <span class="mb-3">Current Month Sales</span><br><br>
+                                            <button class="btn btn-main">Last Month</button>
+                                       
+                                    </div>
+                                    
+                                </div>
+    
+                                <div class="sum-chart col-md-8 py-3 mb-3">
+                                    <div class="">
+                                        <ul class="p-0">
+                                            <li><a href="" class="active-sum">Daily</a></li>
+                                            <li><a href="" >Week</a></li>
+                                            <li><a href="" >Month</a></li>
+                                            <li><a href="" >Yearly</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart px-3">
+                                        <canvas id="myChart" width="500" height="250"></canvas>
+                                    </div>
+                                </div>
+    
+                                    <div class="foot-item col-md-3 col-6 d-flex align-items-center">
+                                        <div class="foot-icon">
+                                            <i class="fas fa-crown bg-primary"></i>
+                                        </div>
+                                        <div class="foot-info px-2 ">
+                                            <span>Wallet Balance</span><br>
+                                            <h5>$4999.00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="foot-item col-md-3 col-6 d-flex align-items-center">
+                                        <div class="foot-icon">
+                                            <i class="fas fa-magic bg-danger"></i>
+                                        </div>
+                                        <div class="foot-info px-2">
+                                            <span>Earnings</span><br>
+                                            <h5>$50999.00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="foot-item col-md-3 col-6 d-flex align-items-center">
+                                        <div class="foot-icon">
+                                            <i class="fas fa-signal bg-warning"></i>
+                                        </div>
+                                        <div class="foot-info px-2">
+                                            <span>Estimate Sales</span><br>
+                                            <h5>$2000.00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="foot-item col-md-3 col-6 d-flex align-items-center">
+                                        <div class="foot-icon">
+                                            <i class="fas fa-heart bg-success"></i>
+                                        </div>
+                                        <div class="foot-info px-2">
+                                            <span>Referral Earning</span><br>
+                                            <h5>$1200.00</h5>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div> 
+                    </div>           
+                </div>
+                <!-- piechart -->
+                <div class="col-md-4">
+                    <div class="pie text-center">
+                        <canvas id="myPieChart" width="auto" height="300"></canvas>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- status -->
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="status d-flex justify-content-between">
+                        <div class="mr-5">
+                            <p class="">Revinue Status</p>
+                            <p class="textc text-warning">
+                                $450
+                                <span>Jan01-Jan10</span>
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <i class="far fa-chart-bar text-warning"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="status d-flex justify-content-between">
+                        <div class="mr-5">
+                            <p class="">Page Status</p>
+                            <p class="textc text-primary">
+                                $450
+                                <span>Jan01-Jan10</span>
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-chart-line text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="status d-flex justify-content-between">
+                        <div class="mr-5">
+                            <p class="">Bounce Rate</p>
+                            <p class="textc text-danger">
+                                $450
+                                <span>Jan01-Jan10</span>
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-retweet text-danger"></i>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <!-- activities -->
+                <div class="col-md-4  ">
+                    <div class="activities pt-3">
+                        <p>Recent Activities</p>
+                        <div class="activities-item d-flex">
+                            <div class="">
+                                <span>1 day Ago</span>
+                            </div>
+                            <div class="ac-icon bg-primary">
+                            <i class="fas fa-tasks"></i>
+                            </div>
+                            <div>
+                                <p class="m-0">Task Updated</p>
+                                <span>Nikolai Update a Task</span>
+                            </div>
+                        </div>
+                        <div class="activities-item d-flex">
+                            <div class="">
+                                <span>1 day Ago</span>
+                            </div>
+                            <div class="ac-icon bg-success">
+                            <i class="fas fa-bolt"></i>
+                            </div>
+                            <div>
+                                <p class="m-0">Deal Added</p>
+                                <span>Nikolai Update a Task</span>
+                            </div>
+                        </div>
+                        <div class="activities-item d-flex">
+                            <div class="">
+                                <span>1 day Ago</span>
+                            </div>
+                            <div class="ac-icon bg-danger">
+                                <i class="fas fa-pen-square"></i>
+                            </div>
+                            <div>
+                                <p class="m-0">Published Article</p>
+                                <span>Nikolai Update a Task</span>
+                            </div>
+                        </div>
+                        <div class="activities-item d-flex">
+                            <div class="">
+                                <span>1 day Ago</span>
+                            </div>
+                            <div class="ac-icon bg-warning">
+                            <i class="fas fa-bolt"></i>
+                            </div>
+                            <div>
+                                <p class="m-0">Dock Updated</p>
+                                <span>Nikolai Update a Task</span>
+                            </div>
+                        </div>
+                        <div class="activities-item d-flex">
+                            <div class="">
+                                <span>1 day Ago</span>
+                            </div>
+                            <div class="ac-icon bg-primary">
+                            <i class="fas fa-bolt"></i>
+                            </div>
+                            <div>
+                                <p class="m-0">Task Updated</p>
+                                <span>Nikolai Update a Task</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="order">
+                        <div class="order-head">
+                            <p class="m-0">Order Status</p>
+                            <span>Overview Last Month</span>
+                        </div>
+                        <div class="all-buttons d-flex mt-3 justify-content-between">
+                            <div>
+                                <button class="btn add-btn"><i class="fas fa-plus"></i> Add</button>
+                                <button class="btn"><i class="fas fa-plus"></i> </button>
+                                <button class="btn"><i class="fas fa-plus"></i></button>
+                                <button class="btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                            <div class="search-bar d-flex align-self-end">
+                                <input type="search" class="form-control" id="search" placeholder="Search">
+                                <button class="btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="main-table mt-3">
+                            <table class="table table-borderless table-hover">
+                                <thead class="bg-light">
+                                  <tr>
+                                    <th scope="col">INVOICE</th>
+                                    <th scope="col">CUSTOMERS</th>
+                                    <th scope="col">FORM</th>
+                                    <th scope="col">PRICE</th>
+                                    <th scope="col">STATUS</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>12122</td>
+                                    <td>Jone Doe</td>
+                                    <td>Brazil</td>
+                                    <td>$299</td>
+                                    <td class="bg-warning text-white">Process</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>12122</td>
+                                    <td>Jone Doe</td>
+                                    <td>Brazil</td>
+                                    <td>$299</td>
+                                    <td class="bg-danger text-white">On Hold</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>12122</td>
+                                    <td>Jone Doe</td>
+                                    <td>Brazil</td>
+                                    <td>$299</td>
+                                    <td class="bg-success text-white">Open</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>12122</td>
+                                    <td>Jone Doe</td>
+                                    <td>Brazil</td>
+                                    <td>$299</td>
+                                    <td class="bg-warning text-white">Process</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>12122</td>
+                                    <td>Jone Doe</td>
+                                    <td>Brazil</td>
+                                    <td>$299</td>
+                                    <td class="bg-success text-white">Open</td>
+                                  </tr>
+                                  
+                                </tbody>
+                              </table>                              
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
